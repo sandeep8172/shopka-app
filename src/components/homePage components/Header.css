@@ -85,3 +85,33 @@
 .user_icon {
     margin-right: 0.5rem;
 }
+
+@media (max-width:1024px) {
+    .header_wrapper h3 {
+        margin-left: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .header_wrapper h3 i {
+        margin-right: 0.5rem;
+    }
+
+    .search_bar {
+        width: 15rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    .search_bar {
+        width: 8rem;
+    }
+
+    .header_wrapper {
+        font-size: 80%;
+    }
+
+    .user_buttons button {
+        font-size: 0.7rem;
+    }
+}

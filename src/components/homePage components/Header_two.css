@@ -12,3 +12,11 @@
 .clothing {
     color: rgb(57, 57, 135);
 }
+
+@media (max-width:768px) {
+    .Header_two_wrapper {
+        padding-bottom: 1rem;
+        margin-top: 12vh;
+        font-size: 65%;
+    }
+}
