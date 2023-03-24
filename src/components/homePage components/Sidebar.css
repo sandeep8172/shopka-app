@@ -1,0 +1,150 @@
+.sidebar_wrapper {
+    width: 20vw;
+    float: left;
+}
+
+.top_list {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar_wrapper div h2 {
+    border: 1px rgb(128, 128, 185) solid;
+    color: rgb(75, 75, 164);
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.sidebar_wrapper div h2 i {
+    margin-right: 1rem;
+}
+
+.sidebar_wrapper div ul li i {
+    margin-right: 0.5rem;
+}
+
+
+.sidebar_wrapper div ul {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+.ecommerce {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
+    color: rgb(71, 70, 70);
+}
+
+.cellPhone {
+    margin-left: 0.5rem;
+}
+
+.dropdown_text {
+    margin-left: 1.7rem;
+    color: rgb(71, 70, 70);
+}
+
+.show_more {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    background-color: rgb(186, 212, 223);
+    width: 6rem;
+    color: rgb(69, 69, 164);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.expand {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    background-color: rgb(186, 212, 223);
+    width: 3.5rem;
+    color: rgb(69, 69, 164);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.collap {
+    margin-left: 1rem;
+    box-shadow: 1px 1px 0px 1px rgb(217, 212, 212);
+    width: 13rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+
+.collap i {
+    margin-left: 5rem;
+}
+
+.middle_list {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: rgba(244, 239, 240, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+}
+
+.expend {
+    margin-bottom: 0.5rem;
+}
+
+.expend i {
+    margin-left: 4.2rem;
+}
+
+.dropdown_text_middle {
+    margin-left: 0.5rem;
+    line-height: 2rem;
+    color: rgb(71, 70, 70);
+
+}
+
+.dropdown_text_middle input {
+    margin-right: 0.5rem;
+}
+
+.dropdown_text_middle i {
+    font-size: 0.7rem;
+}
+
+.bottom_list {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(244, 239, 240, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+
+}
+
+.year {
+    margin-bottom: 0.5rem;
+}
+
+.year i {
+    margin-left: 1.5rem;
+}
+
+.dropdown_text_bottom {
+    margin-left: 0.5rem;
+    line-height: 2rem;
+    color: rgb(71, 70, 70);
+}
+
+.dropdown_text_bottom input {
+    margin-right: 0.5rem;
+}

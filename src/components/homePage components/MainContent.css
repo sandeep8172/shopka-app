@@ -1,0 +1,143 @@
+.content_wrapper {
+    width: 78.7vw;
+    margin-left: 20vw;
+    padding: 0.5rem 0;
+    box-shadow: 1px 3px 4px 2px rgb(217, 222, 226);
+}
+
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_section select {
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+
+
+.right_section button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: rgb(186, 212, 223);
+}
+
+.action {
+    background-color: #fff !important;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 1px 1px rgb(124, 166, 206);
+    color: rgb(61, 61, 206);
+
+}
+
+.buyNow {
+    margin-right: 1rem;
+}
+
+.window {
+    margin-right: 1rem;
+    background-color: #fff !important;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 1px 1px rgb(124, 166, 206);
+    color: rgb(63, 63, 211);
+}
+
+.related_list {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.related_list p {
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.related_list ul {
+    display: flex;
+    list-style: none;
+}
+
+.related_list ul li {
+    margin-left: 0.5rem;
+    background-color: rgb(244, 239, 240, 0.6);
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    color: rgb(70, 65, 65);
+}
+
+.products_list {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+}
+
+.product_name {
+    padding: 0.5rem 0;
+}
+
+
+.product:hover {
+    transition: 0.5s;
+    box-shadow: 2px 3px 4px 4px rgb(217, 222, 226);
+    border-radius: 1rem;
+}
+
+.img {
+    height: 10rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.offer {
+    font-size: 0.7rem;
+    background-color: rgba(238, 230, 232, 0.6);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.3rem;
+    color: green;
+}
+
+.product_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_description {
+    color: rgb(102, 93, 93);
+    padding: 0.5rem 0;
+}
+
+.full_star,
+.half_star {
+    color: rgb(200, 135, 15);
+    font-size: 0.6rem;
+}
+
+.add_button {
+    background-color: #fff;
+    /* margin-left: 3rem; */
+    padding: 0.3rem 0.5rem;
+    color: rgb(83, 83, 178);
+    border: 1px solid rgb(83, 83, 178);
+    border-radius: 0.3rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

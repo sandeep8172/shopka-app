@@ -1,0 +1,14 @@
+.Header_two_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 10vh;
+    color: rgb(79, 77, 77);
+    margin-top: 8vh;
+}
+
+.clothing {
+    color: rgb(57, 57, 135);
+}
