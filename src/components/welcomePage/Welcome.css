@@ -1,0 +1,25 @@
+.welcome_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome_wrapper section h1 {
+    color: rgb(32, 32, 92);
+}
+
+.welcome_wrapper section h1 i {
+    margin-right: 1rem;
+    background-color: rgb(106, 106, 206);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.welcome_wrapper section button {
+    background-color: rgb(51, 83, 169);
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+}

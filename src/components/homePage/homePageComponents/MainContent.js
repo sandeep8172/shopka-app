@@ -1,4 +1,5 @@
 import "./MainContent.css";
+import ListItems from "./ListItems";
 import { useSelector } from "react-redux";
 
 const MainContent = () => {
@@ -24,10 +25,10 @@ const MainContent = () => {
                     <button className="action">Auction</button>
                     <button className="buyNow">Buy now</button>
                     <button>
-                        <i class="fa-solid fa-bars"></i>
+                        <i className="fa-solid fa-bars"></i>
                     </button>
                     <button className="window">
-                        <i class="fa-brands fa-windows"></i>
+                        <i className="fa-brands fa-windows"></i>
                     </button>
                 </section>
             </div>
@@ -45,20 +46,7 @@ const MainContent = () => {
             <div className="products_list">
                 {DUMMY_ITEMS.map((item, index) => {
                     return (
-                        <div className="product" id={index}>
-                            <img className="img" src={item.img} alt="product image" />
-                            <p className="product_name">{item.name}</p>
-                            <h3 className="product_price">
-                                ${item.price} <span className="offer">{item.offer}</span>
-                            </h3>
-                            <p className="product_description">
-                                {item.description}
-                            </p>
-                            <div className="rating">
-                                {item.rating.map(ele => ele)}
-                                {item.rating_Value} <button className="add_button">Add to cart</button>
-                            </div>
-                        </div>
+                        <ListItems key={index} id={index} itemName={item.name} img={item.img} price={item.price} offer={item.offer} description={item.description} rating={item.rating.map(ele => ele)} rating_Value={item.rating_Value} variant={item.variant} />
                     )
                 })
                 }

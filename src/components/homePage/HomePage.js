@@ -1,8 +1,8 @@
 import "./HomePage.css";
-import Header from "./homePage components/Header";
-import Header_two from "./homePage components/Header_two";
-import Sidebar from "./homePage components/Sidebar";
-import MainContent from "./homePage components/MainContent";
+import Header from "./homePageComponents/Header";
+import Header_two from "./homePageComponents/Header_two";
+import Sidebar from "./homePageComponents/Sidebar";
+import MainContent from "./homePageComponents/MainContent";
 
 const HomePage = () => {
     return (

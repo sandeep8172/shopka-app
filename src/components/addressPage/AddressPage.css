@@ -1,0 +1,119 @@
+.address_wrapper {
+    display: flex;
+    background-color: #f1e9e9;
+}
+
+.items_list_wrapper {
+    flex: 3;
+    margin-right: 2rem;
+    box-shadow: 1px 3px 4px 2px rgb(217, 222, 226);
+    background-color: #fff;
+}
+
+.items_list_wrapper ul {
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.items_list_wrapper ul li {
+    border: 1px solid rgb(206, 194, 194);
+    margin-bottom: 1rem;
+    display: flex;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.items_list_wrapper ul li:first-child {
+    margin-top: 1rem;
+}
+
+.items_list_wrapper ul li img {
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 6rem;
+}
+
+.items_list_wrapper ul li section {
+    padding-left: 1rem;
+    width: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.items_list_wrapper ul li section h4 {
+    font-size: 0.9rem;
+}
+
+.items_list_wrapper ul li p {
+    font-size: 0.8rem;
+    color: #918e8e;
+}
+
+.items_list_wrapper ul li span {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.input_wrapper {
+    flex: 1;
+    padding: 0.5rem 0;
+    box-shadow: 1px 3px 4px 2px rgb(217, 222, 226);
+    background-color: #fff;
+}
+
+.input_wrapper p {
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.input_wrapper form {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.input_wrapper form input {
+    width: 97%;
+    margin-bottom: 0.4rem;
+    border: none;
+    height: 1.4rem;
+    background-color: #f1e9e9;
+    border-radius: 0.2rem;
+}
+
+.input_wrapper form label {
+    font-size: 0.8rem;
+}
+
+.input_wrapper form div {
+    display: flex;
+}
+
+.input_wrapper form div input {
+    width: 95%;
+}
+
+.radio_one,
+.radio_two {
+    width: 5% !important;
+    margin-top: 0.5rem;
+}
+
+.radio_two {
+    margin-left: 1rem;
+}
+
+.input_wrapper form button {
+    background-color: rgb(64, 67, 236);
+    color: white;
+    padding: 0.5rem 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}

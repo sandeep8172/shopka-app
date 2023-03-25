@@ -1,0 +1,119 @@
+.checkout_wrapper {
+    display: flex;
+}
+
+.items_wrapper {
+    flex: 3;
+    margin-right: 2rem;
+    background-color: #fff;
+    box-shadow: 1px 3px 4px 2px rgb(217, 222, 226);
+    padding-bottom: 1rem;
+}
+
+.items_wrapper ul {
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.items_wrapper ul li {
+    border: 1px solid rgb(206, 194, 194);
+    margin-bottom: 1rem;
+    display: flex;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.items_wrapper ul li img {
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 6rem;
+}
+
+.items_wrapper ul li section {
+    padding-left: 1rem;
+    width: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    /* border-left: none; */
+}
+
+.items_wrapper ul li section h4 {
+    font-size: 0.9rem;
+}
+
+.items_wrapper ul li p {
+    font-size: 0.8rem;
+    color: #918e8e;
+}
+
+.items_wrapper ul li span {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.delivery_address {
+    margin-left: 5%;
+    line-height: 1.8rem;
+}
+
+.delivery_address h3 {
+    margin-bottom: 0.5rem;
+}
+
+.delivery_address p {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.delivery_address p span {
+    color: #767474;
+    font-weight: 400 !important;
+}
+
+.price_breakdown {
+    flex: 1;
+    padding: 1rem;
+    box-shadow: 1px 3px 4px 2px rgb(217, 222, 226);
+    background-color: #fff;
+    line-height: 3rem;
+
+}
+
+.price_breakdown h5 {
+    font-size: 1rem;
+}
+
+.price_breakdown p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #767474;
+    font-size: 0.8rem;
+    border-bottom: 1px #c5bebe solid;
+}
+
+.price_breakdown p span {
+    color: black;
+    font-weight: 500;
+}
+
+.price_breakdown h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(16, 16, 176);
+}
+
+.price_breakdown button {
+    background-color: rgb(64, 67, 236);
+    color: white;
+    padding: 0.5rem 7rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+
+}
