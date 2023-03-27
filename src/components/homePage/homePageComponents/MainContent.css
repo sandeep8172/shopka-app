@@ -119,6 +119,7 @@
 .product_description {
     color: rgb(102, 93, 93);
     padding: 0.5rem 0;
+    text-transform: lowercase;
 }
 
 .full_star,

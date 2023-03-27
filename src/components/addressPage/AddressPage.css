@@ -111,9 +111,9 @@
 .input_wrapper form button {
     background-color: rgb(64, 67, 236);
     color: white;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 22%;
     border: none;
     border-radius: 0.5rem;
-    margin-left: 4rem;
+    margin-left: 20%;
     margin-top: 1rem;
 }

@@ -21,7 +21,8 @@ const OrderDetails = () => {
                     id: item.id,
                     itemName: item.itemName,
                     img: item.img,
-                    price: item.totalPrice,
+                    price: item.price,
+                    totalPrice: item.totalPrice,
                     variant: item.variant,
                     quantity: item.quantity,
                 }}
@@ -31,14 +32,17 @@ const OrderDetails = () => {
 
     return (
         <div className="pMain_wrapper">
-            <p className="top_text">Place your Order Securely with Order App</p>
-            <div className="details_wrapper">{cartData}</div>
-            <div className="continue">
-                <p>
-                    Are you a Reseller? <a href="#">Click here</a>
-                </p>
-                <button onClick={continueButtonHandler}>Continue</button>
-            </div>
+            {CART_ITEMS.length === 0 && <h2 className="no_product">Please add some products first</h2>}
+            {CART_ITEMS.length > 0 && <div>
+                <p className="top_text">Place your Order Securely with Order App</p>
+                <div className="details_wrapper">{cartData}</div>
+                <div className="continue">
+                    <p>
+                        Are you a Reseller? <a href="#">Click here</a>
+                    </p>
+                    <button onClick={continueButtonHandler}>Continue</button>
+                </div>
+            </div>}
         </div>
     );
 };

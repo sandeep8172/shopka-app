@@ -9,7 +9,7 @@ const initialState = {
             name: "Nikon Camera",
             img: "https://rukminim1.flixcart.com/image/400/400/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70",
             price: 500,
-            description: "A camara",
+            description: "A premium camara",
             offer: "20% OFF",
             rating: [star, star, star, star],
             rating_Value: 4,
@@ -20,7 +20,7 @@ const initialState = {
             name: "SET WET Deo",
             img: "https://rukminim1.flixcart.com/image/400/400/xif0q/deodorant/o/h/w/-original-imaga36aktvbsxmx.jpeg?q=70",
             price: 3,
-            description: "smell good in every condition",
+            description: "smellsgood always",
             offer: "to% OFF",
             rating: [star, star, star, star, half_star],
             rating_Value: 4.5,
@@ -42,7 +42,7 @@ const initialState = {
             name: "Bath Towel",
             img: "https://rukminim1.flixcart.com/image/612/612/ke4kjgw0/bath-towel/9/v/h/bathtoweltealblue60-tezztlpblue60-tezz-original-imafuv958adbutt5.jpeg?q=70",
             price: 6,
-            description: "A camara",
+            description: "Soft and clean",
             offer: "10% OFF",
             rating: [star, star, star, star],
             rating_Value: 4,
@@ -53,7 +53,7 @@ const initialState = {
             name: "Lavie Woman's Handbag",
             img: "https://rukminim1.flixcart.com/image/612/612/xif0q/hand-messenger-bag/t/4/p/-original-imagg7fqjtz66bgu.jpeg?q=70",
             price: 120,
-            description: "Classic handbag that suits your peronality",
+            description: "A Classic handbag",
             offer: "Cool deal!",
             rating: [star, star, star, star, half_star],
             rating_Value: 4.8,
@@ -75,7 +75,7 @@ const initialState = {
             name: " HRX Helmet",
             img: "https://rukminim1.flixcart.com/image/400/400/kz5vwy80/helmet/o/4/k/-original-imagb8azfdthjhqr.jpeg?q=70",
             price: 20,
-            description: "helmet",
+            description: "Helmet for safety",
             offer: "25% OFF",
             rating: [star, star, star, star],
             rating_Value: 4,
@@ -108,7 +108,7 @@ const initialState = {
             name: "Car Light Bulb",
             img: "https://rukminim1.flixcart.com/image/400/400/kw104nk0/vehicle-light-bulb/z/x/m/12-h7-geniune-9000lm-6500k-72-w-led-automotive-headlight-bulbs-original-imag8sqneb7etpg6.jpeg?q=70",
             price: 10,
-            description: "Get yourself cool",
+            description: "Bright up life",
             offer: "30% OFF",
             rating: [star, star, star, star, half_star],
             rating_Value: 4.5,
@@ -119,7 +119,7 @@ const initialState = {
             name: "Puzzles & Cubes",
             img: "https://rukminim1.flixcart.com/image/400/400/kl5hh8w0/puzzle/g/n/g/60-wooden-earth-jigsaw-puzzle-60-pcs-webby-original-imagyc8hsdztzdzb.jpeg?q=70",
             price: 6,
-            description: "Get yourself cool",
+            description: "sharp your mind",
             offer: "Cool deal!",
             rating: [star, star, star, star],
             rating_Value: 4,
@@ -150,6 +150,7 @@ const orderSlice = createSlice({
                     id: newItem.id,
                     itemName: newItem.itemName,
                     img: newItem.img,
+                    price: newItem.price,
                     totalPrice: newItem.price,
                     variant: newItem.variant,
                     quantity: 1,
@@ -159,6 +160,20 @@ const orderSlice = createSlice({
                 existingItems.quantity++;
             }
             console.log(state.CART_ITEMS);
+        },
+        removeItem(state, actions) {
+            const id = actions.payload;
+            for (let i = 0; i < state.DUMMY_ITEMS.length; i++) {
+                state.DUMMY_ITEMS[i].quantity--;
+            }
+            state.totalQuantity--;
+            const existingItems = state.CART_ITEMS.find(item => item.id === id)
+            if (existingItems.quantity === 1) {
+                state.CART_ITEMS = state.CART_ITEMS.filter((item) => item.id !== id);
+            } else {
+                existingItems.totalPrice -= existingItems.price;
+                existingItems.quantity--;
+            }
         },
         addAddress(state, actions) {
             state.userAddress.push(actions.payload);

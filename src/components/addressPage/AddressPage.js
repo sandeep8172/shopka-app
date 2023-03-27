@@ -19,7 +19,6 @@ const AddressPage = () => {
         country: "",
         payment: "",
     });
-
     const navigate = useNavigate();
 
     const items = useSelector(state => state.CART_ITEMS)
@@ -39,6 +38,7 @@ const AddressPage = () => {
             [event.target.name]: data,
         })
     }
+    console.log(input.payment);
 
     return (
         <div className="address_wrapper">
@@ -120,7 +120,7 @@ const AddressPage = () => {
                     <input
                         className="radio_one"
                         type="radio"
-                        name="PaymentType"
+                        name="payment"
                         value="prepaid"
                         onChange={inputDataHandler} required
                     />
@@ -128,7 +128,7 @@ const AddressPage = () => {
                     <input
                         className="radio_two"
                         type="radio"
-                        name="PaymentType"
+                        name="payment"
                         value="COD"
                         onChange={inputDataHandler} required
                     />

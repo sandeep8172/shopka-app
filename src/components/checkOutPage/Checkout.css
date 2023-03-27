@@ -111,9 +111,10 @@
 .price_breakdown button {
     background-color: rgb(64, 67, 236);
     color: white;
-    padding: 0.5rem 7rem;
+    padding: 0.7rem;
+    width: 14rem;
+    margin-left: 3rem;
     border: none;
     border-radius: 0.5rem;
     margin-top: 1rem;
-
 }

@@ -5,6 +5,7 @@ import OrderDetails from "./components/orderDetailsPage/OrderDetails";
 import { Routes, Route } from "react-router-dom";
 import AddressPage from "./components/addressPage/AddressPage";
 import Checkout from "./components/checkOutPage/Checkout";
+import SuccessOrder from "./components/successOrder/SuccessOrder";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Route path="/home/orderDetail" element={<OrderDetails />} />
       <Route path="/home/orderDetail/address" element={<AddressPage />} />
       <Route path="/home/orderDetail/address/checkout" element={<Checkout />} />
+      <Route path="/home/orderDetail/address/checkout/success" element={<SuccessOrder />} />
+
     </Routes>
   );
 }
